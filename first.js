@@ -10,4 +10,6 @@ let obj = {
     grade: "B"
 };
 console.log(student);
-// console.log(obj)
+console.log(obj);
+let person = ['Mahabub', 'John', 'Doe'];
+console.log(person);

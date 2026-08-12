@@ -11,4 +11,7 @@
 }
 
 console.log(student);
-// console.log(obj)
+console.log(obj);
+
+let person:string[]=['Mahabub','John','Doe'];
+console.log(person);
