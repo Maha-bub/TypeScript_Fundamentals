@@ -1,4 +1,4 @@
-const name: "string" | "number" | "boolean" | "object" | "array" | "function" | "undefined" | "null";       
+const UserName = "string" | "number" | "boolean" | "object" | "array" | "function" | "undefined" | "null";
 interface Student {
     Id: number
     name: string

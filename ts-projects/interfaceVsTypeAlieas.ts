@@ -12,3 +12,10 @@ interface Admin extends User {
 interface Moderator extends User {
     moderationPermissions: string[];
 }
+
+const superAdmin: Admin={
+    name: "Super Admin",
+    role: "Admin",
+    age: 35,
+    userPermissions: ["read", "write", "delete"]
+}
