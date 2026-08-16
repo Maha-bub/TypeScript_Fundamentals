@@ -12,3 +12,7 @@ const userIsactive: Response<boolean> = {
     data: true,
     status: 401
 }
+
+function getLength<T>(array: T[]): number {
+    return array.length;
+}
