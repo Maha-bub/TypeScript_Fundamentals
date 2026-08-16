@@ -1,14 +1,35 @@
-function useState(initialValue: number): void {
+// function useState(initialValue: number): void {
+//     let value = initialValue;
+
+//     function Counter(newCounter: number) {
+//         let value = newCounter;
+//     }
+
+//     return [value, Counter];
+// }
+
+// let [counter, setCounter] = useState(0)
+
+// console.log(counter)
+// console.log(setCounter)
+
+function useState<T>(initialValue:T){
     let value = initialValue;
 
-    function Counter(newCounter: number) {
-        let value = newCounter;
+    function Counter(newCounter: T) {
+        value = newCounter;
     }
 
     return [value, Counter];
 }
 
-let [counter, setCounter] = useState(0)
+useState<number>(0)
+useState<boolean>(true)
+useState<string>("Mahabub");
 
-console.log(counter)
-console.log(setCounter)
+interface User{
+    email: string;
+    isLoggedIn:boolean;
+}
+
+useState<User>({ email: '', isLoggedIn: false })
