@@ -27,3 +27,9 @@ const products2 = [
 
 console.log(calculateCartTotal(products2));
 // 1750
+const products3 = [
+    { name: "Shoes", price: 2500 },
+    { name: "Socks", price: 200 },
+    { name: "Hat", price: 800 }
+];
+console.log(calculateCartTotal(products3));
