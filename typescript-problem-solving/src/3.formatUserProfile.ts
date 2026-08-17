@@ -4,8 +4,7 @@ interface User {
     city: string;
 }
 const formatUserProfile = (user: User): string => {
-    return `${user.name} is ${user.age} years old and lives is ${user.city}`;
-
+    return `${user.name} is ${user.age} years old and lives in ${user.city}`;   
 }
 
 console.log(formatUserProfile({
