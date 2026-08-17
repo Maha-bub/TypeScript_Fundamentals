@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const formatUserProfile = (user) => {
-    return `${user.name} is ${user.age} years old and lives is ${user.city}`;
+    return `${user.name} is ${user.age} years old and lives in ${user.city}`;
 };
 console.log(formatUserProfile({
     name: "Fahim",
