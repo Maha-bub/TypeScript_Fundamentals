@@ -26,6 +26,8 @@ const getPlayerStats = (player: Player): Result => {
 
 }
 
+
+
 console.log(getPlayerStats({
     name: "Nova",
     scores: [90, 85, 95, 80]
