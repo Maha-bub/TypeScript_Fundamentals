@@ -6,12 +6,16 @@ interface Transaction {
 const processTransaction = (amount: number, transaction: Transaction) => {
     let amountTotal = amount;
     if (transaction.type === "deposit") {
-       return amountTotal + transaction.amount;
+        return amountTotal + transaction.amount;
     } else if (transaction.type === "withdrawal") {
-       return amountTotal -= transaction.amount;
-    }
-    return amountTotal;
+        if (transaction.amount > amountTotal) {
+            return "Insufficient Amount";
+        } else {
+           return amountTotal -= transaction.amount;
+        }
+        
 
+    }
 }
 
 console.log(processTransaction(5000, { type: "withdrawal", amount: 2000 }));
