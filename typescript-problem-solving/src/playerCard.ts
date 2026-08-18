@@ -3,7 +3,7 @@ interface PlayerCard {
     level: number,
     region: string
 }
-const formatPlayerCard = (player: PlayerCard) => {
+const formatPlayerCard = (player: PlayerCard): string => {
     return `${player.username} is a level ${player.level} player from ${player.region}.`;
 
 }

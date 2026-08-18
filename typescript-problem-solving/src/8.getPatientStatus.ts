@@ -23,10 +23,10 @@ const getPatientStatus = (patient: General | Emergency): string => {
 }
 
 
-const hasan = { name: "Hasan", age: 45, type: "emergency", emergencyLevel: 3 };
-const karim = { name: "Karim", age: 60, type: "emergency", emergencyLevel: 1 };
-const rahim = { name: "Rahim", age: 35, type: "general" };
+const hasan = { name: "Hasan", age: 45, type: "emergency" as const, emergencyLevel: 3 };
+const karim = { name: "Karim", age: 60, type: "emergency" as const, emergencyLevel: 1 };
+const rahim = { name: "Rahim", age: 35, type: "general" as const };
 
-console.log(getPatientStatus(hasan))
-console.log(getPatientStatus(karim))
-console.log(getPatientStatus(rahim))
+console.log(getPatientStatus(hasan));
+console.log(getPatientStatus(karim));
+console.log(getPatientStatus(rahim));
