@@ -13,7 +13,7 @@
 // console.log(counter)
 // console.log(setCounter)
 
-function useState<T>(initialValue:T){
+function useState<T>(initialValue: T): [T, (newCounter: T) => void] {
     let value = initialValue;
 
     function Counter(newCounter: T) {
@@ -27,9 +27,9 @@ useState<number>(0)
 useState<boolean>(true)
 useState<string>("Mahabub");
 
-interface User{
+interface User {
     email: string;
-    isLoggedIn:boolean;
+    isLoggedIn: boolean;
 }
 
 useState<User>({ email: '', isLoggedIn: false })
