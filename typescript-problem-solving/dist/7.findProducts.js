@@ -1,7 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const findProducts = (products, category) => {
-    return products.filter(product => product.category === category);
+    const filteredProducts = products.filter((product) => {
+        return product.category === category;
+    });
+    return filteredProducts;
 };
 const products = [
     { name: "iPhone 15", price: 90000, category: "phone" },
@@ -13,4 +16,6 @@ console.log(findProducts(products, "phone"));
 // returns the iPhone 15 and Galaxy S24 objects
 console.log(findProducts(products, "laptop"));
 // returns the two laptop products
+console.log(findProducts(products, "pc"));
+// returns an empty array
 //# sourceMappingURL=7.findProducts.js.map

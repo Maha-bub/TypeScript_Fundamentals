@@ -25,3 +25,5 @@ console.log(findProducts(products, "phone"));
  
 console.log(findProducts(products, "laptop"));
 // returns the two laptop products
+console.log(findProducts(products, "pc"));
+// returns an empty array
