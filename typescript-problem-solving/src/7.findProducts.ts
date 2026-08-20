@@ -6,8 +6,11 @@ interface Product{
 
 
 const findProducts = (products: Product[], category: string) => {
-    return products.filter(product => product.category === category);
-}
+    const filteredProducts = products.filter((product) => {
+        return product.category === category;
+    });
+    return filteredProducts;
+};
 
 
 const products = [
