@@ -5,7 +5,7 @@ interface Product{
 }
 
 
-const findProducts = (products: Product[], category: string) => {
+const findProducts = (products: Product[], category: string): Product[] => {
     const filteredProducts = products.filter((product) => {
         return product.category === category;
     });
