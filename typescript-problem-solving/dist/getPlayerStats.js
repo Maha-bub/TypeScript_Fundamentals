@@ -13,7 +13,7 @@ const getPlayerStats = (player) => {
     else {
         rank = "Rookie";
     }
-    return { name: playerName, average: average, rank: rank };
+    return { name: playerName, average, rank };
 };
 console.log(getPlayerStats({
     name: "Nova",
